@@ -14,5 +14,19 @@
             </header>
         <br><br><br>
         <h1>Második oldal</h1>
+        <button type="button" onclick="szoveg()">Szöveg</button>
+<button type="button" onclick="hatter()">Háttér</button>
+<script>
+    
+function hatter() {
+  document.body.style.backgroundColor = "red";
+}
+function szoveg(){
+const h1 = document.createElement("H1");
+const textNode = document.createTextNode("Hello World");
+h1.appendChild(textNode);
+document.body.appendChild(h1);
+}
+</script>
     </body>
 </html>

@@ -16,7 +16,8 @@
         <h1>Második oldal</h1>
         <button type="button" onclick="szoveg()">Szöveg</button>
 <button type="button" onclick="hatter()">Háttér</button>
-<button id="openszin">Open</button>
+<button id="open">Open</button>
+<h2></h2>
 <script>
     
 function hatter() {
@@ -28,6 +29,11 @@ const textNode = document.createTextNode("Szöveg");
 p.appendChild(textNode);
 document.body.appendChild(p);
 }
+let gomb = document.querySelector('#open');
+gomb.addEventListener('click', () =>{
+    gomb.innerText = 'Close';
+    event.target.style.color = 'red';
+})
 </script>
     </body>
 </html>

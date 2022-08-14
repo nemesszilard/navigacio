@@ -18,12 +18,7 @@
 <button type="button" onclick="hatter()">Háttér</button>
 <button id="open">Open</button>
 <button id="show" onclick="cars()">Show Cars</button>
-<h2></h2>
-<br id="lista">
-<ol>
-
-    <li></li>
-</ol>
+<h2 id="demo"></h2>
 <script>
     
 function hatter() {
@@ -41,30 +36,16 @@ gomb.addEventListener('click', () =>{
     event.target.style.color = 'red';
 });
 
-/*
-const cities = [
-    "Saab",
-    "Volvo", 
-    "BMW",
-    "Volkswagen",
-    "Audi",
-    "Skoda",
-    "Seat",
-    "Suzuki",
-    "Ferrari",
-    "Hyundai"
-];
-      
-function Cars(arg) { 
-    let items = "";
-     for(let i = 0; i < arg.length; i++){        
-    items += '<li>${arg[i]}</li>';
-
-        }
-        return items;
+function cars() {
+  const cars = ["Saab","Volvo","BMW","Volkswagen","Audi","Skoda","Seat","Suzuki","Ferrari","Hyundai"];
+let hossz = cars.length;
+let text = "<ol>";
+    for (let i = 0; i < hossz; i++) {
+        text += "<ol>" + cars[i] + "</ol>";
+    }
+    text += "</ol>";
+    document.getElementById("demo").innerHTML = text;
 }
-document.querySelector("main").innerHTML = '<ol>${cars(kocsik)}</ol>';
-*/
 </script>
     </body>
 </html>

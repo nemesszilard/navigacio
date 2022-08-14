@@ -12,20 +12,25 @@ section {
   background-attachment: fixed;
   height: 100%;
   position: relative;
-  top: 46.49px;
 }
 
 .section-1{background-image: url(cseresznye.jpg);
+  top: 40px;
 }
-.section-2{background-image: url(dinnye.jpg);}
-.section-3{background-image: url(kamera.jpg);}
+.section-2{background-image: url(dinnye.jpg);
+  top: 40px;
+  bottom: 200px;;
+}
+.section-3{background-image: url(kamera.jpg);
+  top: 30px;
+  bottom: -40px;}
 h1{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 5vw;
   color: white;
   background: rgba(0, 0, 0, .7);
   padding: 20px 40px;
-  bottom: 50px;
+  bottom: 96.49px;
   right: 50px;
   text-align: center;
   left: 50px;
